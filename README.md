@@ -1,6 +1,6 @@
 # CSS Ninja Training
 
-![CSS Ninja Banner]([https://via.placeholder.com/800x200?text=CSS+Ninja+Training](https://www.bram.us/wordpress/wp-content/uploads/2019/01/html-css-banner-560x280.png))
+![CSS Ninja Banner][https://www.bram.us/wordpress/wp-content/uploads/2019/01/html-css-banner-560x280.png]
 
 Aprende las técnicas avanzadas de CSS con este proyecto educativo.
 
