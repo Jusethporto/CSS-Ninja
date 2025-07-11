@@ -1,0 +1,154 @@
+body{
+  background: linear-gradient(-45deg, #e1eacd, #bad8b6, #61b390, #01352c);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+div{
+  color: blue;
+}
+
+#special {
+  color: rgb(0, 255, 0);
+}
+
+.box {
+  color: rgb(31, 31, 31);
+  width: 300px;
+  padding: 20px;
+  margin: 15px auto;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0,0,0, 0.5);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  width: 300px;
+  padding: 20px;
+  margin: 15px auto;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #2a2a2a;
+  transition: all 0.2s ease;
+}
+
+.inline-block:hover {
+  background-color: #3a3a3a;
+}
+
+.fixed.box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #d32f2f;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.rotate-box{
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  transition: transform 0.5s ease;
+}
+
+.rotate-box:hover {
+  transform: rotate(370deg);
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.box::before{
+  content: "New!";
+  color: red;
+  font-weight: bold;
+}
+
+.fade-in{
+  animation: fade 2s ease-in-out;
+}
+
+header{
+  border: 10px solid #000000;
+}
+
+header h1 {
+  transition: color 0.5s ease;
+  animation: jump 1s infinite alternate;
+}
+
+header h1:hover {
+  color: white;
+  background: linear-gradient(to right, #e1eacd, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header p {
+  animation: rainbow 3s infinite;
+}
+
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
